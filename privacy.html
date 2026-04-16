@@ -92,43 +92,53 @@
     <main class="wrap">
         <section class="card">
             <h1>Poker Drinker 隱私權政策</h1>
-            <p class="muted">最後更新日期：2026-04-13</p>
+            <p class="muted">最後更新日期：2026-04-16</p>
             <p>
                 本隱私權政策說明 Poker Drinker（下稱「本 App」）在 Android 與 iOS 平台如何蒐集、使用與保護您的資訊。
                 使用本 App 代表您同意本政策內容。
             </p>
 
-            <h2>1. 我們可能蒐集的資訊</h2>
+            <h2>1. 我們蒐集的資料類型</h2>
             <ul>
                 <li>
-                    廣告與裝置資訊：本 App 使用 Google AdMob 顯示廣告，AdMob 可能蒐集裝置識別資訊、IP、廣告互動資料與大致地區資訊。
+                    裝置與廣告資料（Google AdMob / Google Mobile Ads SDK）：可能包含廣告識別碼（如 Android Advertising ID 或 iOS Identifier
+                    for Advertising）、IP 位址、裝置型號、作業系統版本、語言、網路資訊、粗略地理區域、廣告展示/點擊/回應事件。
                 </li>
                 <li>
-                    內購資訊：本 App 使用 RevenueCat 與平台商店（Google Play / App Store）處理付款與訂閱狀態，可能涉及交易狀態、產品識別碼與權限狀態。
+                    交易與權限資料（RevenueCat + Google Play / Apple App Store）：可能包含產品識別碼、交易狀態、收據或交易權杖、訂單狀態、是否具備去廣告等權限。
                 </li>
                 <li>
-                    本機資料：本 App 會在您的裝置本機儲存遊戲設定、音效設定、語言偏好與遊戲進度相關資料。
+                    使用行為資料：當您使用廣告或購買功能時，相關互動事件可能由第三方 SDK 蒐集並處理。
+                </li>
+                <li>
+                    本機資料（儲存在您的裝置，不是我們自建伺服器）：語言偏好、音效設定、廣告顯示節奏控制資料、卡背設定、您自行選擇的自訂卡背圖片檔案。
+                </li>
+                <li>
+                    相簿權限資料：若您使用「自訂卡背圖片」功能，App 會在您授權後存取您所選取的圖片。未授權時該功能不可用。
                 </li>
             </ul>
+            <p>
+                目前版本未整合 Firebase Analytics 或 Google Analytics for Firebase SDK。若未來導入，我們將更新本政策與商店揭露資訊。
+            </p>
 
             <h2>2. 我們如何使用資訊</h2>
             <ul>
-                <li>提供與維護遊戲功能</li>
-                <li>顯示與優化廣告投放</li>
-                <li>驗證購買項目與去廣告權限</li>
-                <li>改善 App 穩定性與使用體驗</li>
+                <li>提供、維護與改善遊戲功能及使用體驗。</li>
+                <li>顯示廣告、限制廣告頻率，並依地區法規處理廣告同意選項。</li>
+                <li>驗證內購項目與去廣告權限，防止重複或異常交易。</li>
+                <li>進行必要除錯、故障排除與服務安全維護。</li>
             </ul>
 
-            <h2>3. 第三方服務</h2>
-            <p>本 App 可能使用以下第三方服務，相關資料處理由其政策規範：</p>
+            <h2>3. 第三方 SDK 與服務揭露</h2>
+            <p>本 App 使用以下第三方服務；其資料蒐集與處理依各服務提供者政策辦理：</p>
             <ul>
                 <li>
-                    Google AdMob：
+                    Google AdMob（廣告服務）：
                     <a href="https://policies.google.com/privacy" target="_blank"
                         rel="noreferrer">https://policies.google.com/privacy</a>
                 </li>
                 <li>
-                    RevenueCat：
+                    RevenueCat（內購管理與權限驗證）：
                     <a href="https://www.revenuecat.com/privacy" target="_blank"
                         rel="noreferrer">https://www.revenuecat.com/privacy</a>
                 </li>
@@ -144,72 +154,122 @@
                 </li>
             </ul>
 
-            <h2>3.1 廣告同意與個人化設定</h2>
+            <h2>4. 廣告同意與個人化設定</h2>
             <p>
                 依您所在國家或地區法規要求，本 App 可能顯示廣告同意視窗，供您選擇是否同意個人化廣告。
                 您也可透過裝置隱私設定或平台提供之選項調整廣告偏好。
             </p>
 
-            <h2>4. 資料保存與安全</h2>
+            <h2>5. 資料保存期間</h2>
             <p>
-                我們僅在達成前述目的所需期間內保存資料，並採取合理技術與管理措施保護資料安全。
-                但任何網路傳輸或電子儲存方式均無法保證百分之百安全。
+                我們依最小必要原則保存資料，保存邏輯如下：
             </p>
-
-            <h2>5. 兒童隱私</h2>
-            <p>
-                本 App 不以 13 歲以下兒童為主要目標受眾。如您認為未成年人提供了個資，請與我們聯絡。
-                若依適用法律需要法定代理人同意，我們將依規辦理。
-            </p>
+            <ul>
+                <li>本機設定與遊戲資料：保留於您的裝置，直到您刪除 App、重設 App、或手動清除相關資料。</li>
+                <li>自訂卡背圖片：保留於您的裝置 App 目錄，直到您在 App 內移除、清除資料或刪除 App。</li>
+                <li>內購與訂閱紀錄：由平台商店與 RevenueCat 依其法規與政策保存。</li>
+                <li>廣告與裝置資料：由 AdMob/Google 依其政策與法定期間保存。</li>
+            </ul>
 
             <h2>6. 您的權利</h2>
             <p>
-                依您所在地法規，您可能擁有查詢、存取、更正或刪除個人資料等權利。
-                您可透過下方聯絡方式與我們提出請求。
+                依您所在地法律，您可能享有以下權利：存取、查詢、更正、刪除、限制或反對特定資料處理，以及撤回同意（如適用）。
             </p>
+            <p>您可透過本政策下方聯絡方式提出請求，我們通常會在 30 天內回覆處理進度。</p>
+
+            <h2>7. 資料刪除申請</h2>
             <p>
-                如欲申請資料刪除，請以「資料刪除申請」為主旨寄送電子郵件，並提供您使用的平台（Android 或 iOS）與必要辨識資訊；
-                我們通常會在 30 天內回覆處理進度。
+                如欲申請資料刪除，請以「資料刪除申請」為主旨來信，並提供：
+            </p>
+            <ul>
+                <li>使用平台（Android 或 iOS）</li>
+                <li>用於辨識請求所需的必要資訊（例如購買訂單編號末幾碼或交易時間）</li>
+                <li>希望刪除的資料類型（例如本機資料指引、購買關聯資料）</li>
+            </ul>
+            <p>
+                注意：部分交易紀錄可能因稅務、會計或法規要求而無法立即刪除，將依法律保留最低必要期間。
             </p>
 
-            <h2>7. 聯絡我們</h2>
+            <h2>8. 兒童與年齡限制政策</h2>
             <p>
-                如您對本政策有任何疑問，請聯絡：
-                <br />
+                本 App 內容涉及飲酒情境，不以兒童為對象。未滿適用法定年齡（例如部分地區 18 歲以上）或 13 歲以下者不應使用本 App。
+                如您是家長或監護人，並認為未成年人提供了個人資料，請聯絡我們以便處理。
+            </p>
+
+            <h2>9. 跨境傳輸</h2>
+            <p>
+                由於使用 AdMob、RevenueCat 與平台商店服務，您的部分資料可能在您所在國家/地區以外處理。
+                我們將依適用法律採取合理保護措施。
+            </p>
+
+            <h2>10. 資料安全</h2>
+            <p>
+                我們採取合理技術與管理措施以保護資料安全；但網路傳輸或電子儲存無法保證百分之百安全。
+            </p>
+
+            <h2>11. 聯絡我們</h2>
+            <p>
+                如您對本政策有任何疑問，請聯絡：<br />
                 電子郵件：<code>antio.tseng@gmail.com</code>
             </p>
 
-            <h2>8. 政策更新</h2>
+            <h2>12. 政策更新</h2>
             <p>
-                我們可能因法規或產品調整更新本政策，更新後將發布於本頁並標示最新日期。
+                我們可能因法規要求或產品功能更新本政策。更新版本會發布於本頁並標示「最後更新日期」。
             </p>
 
             <hr />
 
             <h1>Privacy Policy (English)</h1>
-            <p class="muted">Last updated: 2026-04-13</p>
+            <p class="muted">Last updated: 2026-04-16</p>
             <p>
                 This Privacy Policy explains how Poker Drinker (the "App") collects, uses, and protects information on
                 Android and iOS.
                 By using the App, you agree to this policy.
             </p>
 
-            <h2>1. Information We May Collect</h2>
+            <h2>1. Categories of Data We Collect</h2>
             <ul>
-                <li>Advertising and device information through Google AdMob.</li>
-                <li>Purchase and entitlement status through RevenueCat and app stores.</li>
-                <li>Local device data such as settings, language preference, and gameplay-related local state.</li>
+                <li>
+                    Device and ad data (Google AdMob / Google Mobile Ads SDK): may include advertising identifiers,
+                    IP address, device model, OS version, language, network information, coarse region, and ad
+                    interaction events.
+                </li>
+                <li>
+                    Purchase and entitlement data (RevenueCat + Google Play / Apple App Store): may include product
+                    IDs, transaction status, receipts or purchase tokens, and entitlement status (such as no-ads).
+                </li>
+                <li>
+                    Usage data related to ads and purchases: interaction events may be collected and processed by
+                    third-party SDKs.
+                </li>
+                <li>
+                    Local on-device data: language preference, sound settings, ad pacing control data, card-back
+                    settings, and user-selected custom card-back image files.
+                </li>
+                <li>
+                    Photo library data: if you use custom card-back uploads, the App accesses only the image(s) you
+                    choose after permission is granted.
+                </li>
             </ul>
+            <p>
+                The current version does not integrate Firebase Analytics or Google Analytics for Firebase SDK. If
+                that changes, this policy and store disclosures will be updated.
+            </p>
 
             <h2>2. How We Use Information</h2>
             <ul>
-                <li>Provide and maintain app functionality.</li>
-                <li>Serve and optimize ads.</li>
+                <li>Provide, maintain, and improve app functionality and user experience.</li>
+                <li>Serve ads, manage ad frequency, and handle consent where required by law.</li>
                 <li>Validate in-app purchases and no-ads entitlements.</li>
-                <li>Improve app performance and user experience.</li>
+                <li>Support debugging, fraud prevention, and service security.</li>
             </ul>
 
-            <h2>3. Third-Party Services</h2>
+            <h2>3. Third-Party SDKs and Services</h2>
+            <p>
+                The App uses the following third-party services. Their own privacy policies govern how they process
+                data:
+            </p>
             <ul>
                 <li><a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google AdMob
                         Privacy</a></li>
@@ -226,14 +286,58 @@
                 You can also manage ad preferences through device privacy settings or platform-level options.
             </p>
 
-            <h2>5. Data Deletion Requests</h2>
+            <h2>5. Data Retention</h2>
+            <ul>
+                <li>Local app settings and gameplay data are stored on your device until you clear data or uninstall.
+                </li>
+                <li>Custom card-back image files remain on your device until removed or the App is uninstalled.</li>
+                <li>Purchase and subscription records are retained by app stores and RevenueCat per legal obligations.
+                </li>
+                <li>Ad and device-related data are retained by Google/AdMob according to their policies.</li>
+            </ul>
+
+            <h2>6. Your Rights</h2>
+            <p>
+                Depending on applicable law, you may have rights to access, correct, delete, restrict, object to
+                processing, or withdraw consent.
+            </p>
+            <p>You may contact us to exercise these rights. We generally respond within 30 days.</p>
+
+            <h2>7. Data Deletion Requests</h2>
             <p>
                 To request data deletion, email us with the subject "Data Deletion Request" and include your platform
-                (Android or iOS) and necessary identifiers. We generally respond within 30 days.
+                (Android or iOS), request details, and necessary identifiers.
+            </p>
+            <p>
+                Some transaction records may need to be retained for tax, accounting, anti-fraud, or legal compliance.
             </p>
 
-            <h2>6. Contact</h2>
+            <h2>8. Children and Age Restrictions</h2>
+            <p>
+                The App includes drinking-related game themes and is not intended for children. Users under the
+                applicable legal age (for example, 18+ in some regions) or under 13 must not use the App.
+            </p>
+
+            <h2>9. International Data Transfers</h2>
+            <p>
+                Because we use AdMob, RevenueCat, and platform store services, some data may be processed outside your
+                country or region, subject to applicable legal safeguards.
+            </p>
+
+            <h2>10. Security</h2>
+            <p>
+                We use reasonable technical and organizational safeguards. However, no internet transmission or
+                electronic storage method is 100% secure.
+            </p>
+
+            <h2>11. Contact</h2>
             <p>Email: <code>antio.tseng@gmail.com</code></p>
+
+            <h2>12. Policy Updates</h2>
+            <p>
+                We may update this policy for legal, operational, or product changes. The revised version will be
+                posted on this page with an updated "Last updated" date.
+            </p>
 
             <p class="foot">This document applies to both Android and iOS versions of Poker Drinker.</p>
         </section>
